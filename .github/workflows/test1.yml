@@ -36,7 +36,7 @@ jobs:
           repo: ${{ github.event.repository.name }}
           number: ${{ github.event.number }}
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_ALL_SCOPES }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - id: extract
         uses: gr2m/get-json-paths-action@v1.x
         with:
